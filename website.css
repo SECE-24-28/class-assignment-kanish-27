@@ -1,0 +1,55 @@
+/* ==== GLOBAL ==== */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-text .nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+    color: #000;
+}
+.nav-text .nav-link:hover {
+    color: #0066ff;
+}
+
+/* ==== HERO SECTION ==== */
+.hero-section {
+    background: url('back.jpeg') center/cover no-repeat;
+    padding: 180px 0;
+    position: relative;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 30, 0.45);
+}
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==== ABOUT IMAGE STACK ==== */
+.img-stack {
+    position: relative;
+}
+.img-top {
+    width: 80%;
+    border-radius: 15px;
+}
+.img-bottom {
+    width: 60%;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    border-radius: 15px;
+}
+
+/* ==== ABOUT SECTION TEXT ==== */
+.about-section h2 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+.about-section p {
+    font-size: 17px;
+}
