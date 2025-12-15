@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.clock-container {
+    display: flex;
+    width: 50rem;
+    height: 21.875rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.5);
+}
+
+.left-panel {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.time-main {
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: -0.125rem;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #D4FF2A;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.seconds {
+    font-size: 20rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: -1.25rem;
+}
+
+.ampm {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.875rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}

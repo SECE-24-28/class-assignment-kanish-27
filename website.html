@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyashin Website</title>
+    <link rel="stylesheet" href="website.css">
+
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="top-header">
+    <div class="logo-section">
+        <img src="logo.png" class="logo">
+        <div class="tagline">Innovate • Collaborate • Accelerate</div>
+    </div>
+
+    <div class="social-icons">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fas fa-search"></i>
+    </div>
+
+    <div class="contact-info">
+        <div>Need help? Talk to an expert</div>
+        <div class="phone">
+            <span><img src="flag.png" class="flag"> +1 302 279 0052</span>
+            <span><img src="flag2.png" class="flag"> +91 960 691 5923</span>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <ul>
+        <li class="active">HOME</li>
+        <li>OUR COMPANY</li>
+        <li>SERVICES</li>
+        <li>PRODUCTS</li>
+        <li>SOLUTIONS</li>
+        <li>INDUSTRIES</li>
+        <li>CAREERS</li>
+        <li>CONTACT US</li>
+    </ul>
+</nav>
+
+<section class="about-carousel">
+    <div class="slides">
+
+        <div class="slide active">
+            <img src="newback.jpeg" alt="">
+            <div class="text-content">
+                <h1>About</h1>
+                <p>We provide 360-degree solutions with cutting-edge technology,
+                offering unique solutions.</p>
+                <button>DISCOVER MORE</button>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="back2.jpeg" alt="">
+            <div class="text-content">
+                <h1>Solutions</h1>
+                <p>
+                    We provide diverse IT solutions, with innovation at its core. 
+                    Adhering to the principle of "doing the same thing in a more innovative manner," 
+                    our solutions, though similar in name, stand apart with unique innovation embedded within.</p>
+                <button>DISCOVER MORE</button>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="back4.jpeg" alt="">
+            <div class="text-content">
+                <h1>Industries</h1>
+                <p>
+                    We cater to diverse industries' IT needs,
+                    leveraging subject matter experts to address specific requirements promptly and deliver 
+                    substantial returns on investment for our clients.</p>
+                <button>DISCOVER MORE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<section class="about-section">
+  <div class="about-container">
+    <!-- Left Images -->
+    <div class="about-images">
+
+      <div class="img-box img-1">
+        <img src="Website.png" alt="">
+        <div class="shape shape-1"></div>
+      </div>
+
+      <div class="img-box img-2">
+        <img src="website2.png" alt="">
+        <div class="shape shape-2"></div>
+        <div class="dots"></div>
+      </div>
+
+    </div>
+
+    <div class="about-text">
+      <button class="tag">ABOUT US</button>
+      <h2>Work Together For Your<br>Business</h2>
+      <p>
+      Dyashin Technosoft is a renowned <b>Software Development</b> 
+      and <b>Engineering services</b> company led by a group of 
+      industry veterans. With our passion, knowledge, and commitment 
+      to excellence, we believe in transforming the arena of 
+      <b>software development</b> and empowering customer businesses 
+      to embrace the future and achieve amazing success.
+      </p>
+      <p>
+      Our comprehensive range of custom software services & solutions 
+      are designed to assist our customers at all stages of the SDLC, 
+      assuring project success from start to end and beyond.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlides() {
+    slides.forEach((item) => item.classList.remove("active"));
+    dots.forEach((item) => item.classList.remove("active"));
+    
+    index = (index + 1) % slides.length;
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+}
+setInterval(showSlides, 4000);
+</script>
+
+</body>
+</html>
