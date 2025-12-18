@@ -16,3 +16,7 @@ fs.appendFileSync(filePath, "This is a appended line");
 
 const res = fs.readFileSync(filePath,"utf-8");
 console.log(res);
+
+fs.renameSync(filePath,"dmeo/rename.txt");
+
+fs.unlinkSync("dmeo/rename.txt");
