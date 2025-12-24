@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const app = express();
 const PORT = 4000;
@@ -27,3 +28,21 @@ router.get("/all-items",(req,res)=>{
 app.listen(PORT,()=>{
     console.log("Server is listening",PORT)
 });
+=======
+const express=require('express');
+const dotenv=require('dotenv');
+dotenv.config();
+const {connectDB} = require("./db");
+const app=express();
+const port=process.env.PORT 
+
+console.log(process.env.PORT)
+
+app.use("/api/v1",router)
+
+connectDB().then(()=>{
+app.listen(process.env.PORT,()=>{
+    console.log("server is running on port",process.env.PORT);
+})
+})
+>>>>>>> ec891c8 (Database Connectivity)
